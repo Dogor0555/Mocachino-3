@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.content-all{
+	width: 300px;
+	margin: auto;
+	perspective: 1250px;
+	position: relative;
+	margin-top: 80px;
+
+}
+ body{
+ 	background-image: url(Imagenes/fondo.jpeg);
+ 	background-position: center;
+ 	background-repeat: no-repeat; 
+ 	background-size: 230vh;
+ }
+
+ h2{
+ 	text-align: center;
+ 	font-size: 40px;
+ 	font-family: Comic Sans;
+ 	margin-top: 30px;
+ 	color: #f1d1d1;
+ 	 background: #f6acc8;
+ 	text-shadow: 0px 0px 6px black;
+ 	box-shadow: 5px 5px 15px #c3aed6;
+ 	border:5px solid #f19292;
+ 	border-radius: 20px;
+     width: 65%;
+
+ 	
+ 
+ 
+ }
+.content-carrucel{
+	width: 110%;
+	position: absolute;
+	animation: rotar 10s infinite Linear;
+	transform-style: preserve-3d;
+}
+
+
+.content-carrucel figure{
+	width: 200px;
+	height: 300px;
+	overflow: hidden;
+	position: absolute;
+	box-shadow: 0px 0px 20px 0px black;
+	transition: all 500ms;
+
+}
+
+.content-carrucel figure:hover{
+
+	box-shadow: 0px 0px 0px 0px black;
+    transition: all 500ms;
+
+}
+
+.content-carrucel:hover{
+	animation-play-state: paused;
+	cursor: pointer;
+}
+
+.content-carrucel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+.content-carrucel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+.content-carrucel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+.content-carrucel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+.content-carrucel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+.content-carrucel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+.content-carrucel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+.content-carrucel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+.content-carrucel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+.content-carrucel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+
+.content-carrucel img{
+	width: 100%;
+	transition: all 500ms;
+}
+
+.content-carrucel img:hover{
+	transform: scale(2.5);
+	transition: all 500ms;
+}
+
+
+@keyframes rotar{
+	from{
+		transform: rotateY(0deg);
+	}to{
+		transform: rotateY(360deg);
+	}
+}
